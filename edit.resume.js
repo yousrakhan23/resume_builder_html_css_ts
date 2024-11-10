@@ -137,14 +137,14 @@ function loadStoredData() {
             updatedData.profileImage = (_a = event.target) === null || _a === void 0 ? void 0 : _a.result;
             localStorage.setItem('resumeData', JSON.stringify(updatedData));
             alert('Resume updated successfully!');
-            window.location.href = './my-resume.html';
+            window.location.href = 'mine-resume.html';
         };
         reader.readAsDataURL(profileImageInput.files[0]);
     }
     else {
         localStorage.setItem('resumeData', JSON.stringify(updatedData));
         alert('Resume updated successfully!');
-        window.location.href = './my-resume.html';
+        window.location.href = 'mine-resume.html';
     }
 });
 window.onload = loadStoredData;

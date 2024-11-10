@@ -51,7 +51,6 @@ profileImageInput === null || profileImageInput === void 0 ? void 0 : profileIma
 });
 (_a = document.querySelector("form")) === null || _a === void 0 ? void 0 : _a.addEventListener("submit", function (e) {
     e.preventDefault();
-    // Creating an object to store form data
     var formData = {
         aboutMe: {
             firstName: (firstName === null || firstName === void 0 ? void 0 : firstName.value) || '',
@@ -131,5 +130,5 @@ profileImageInput === null || profileImageInput === void 0 ? void 0 : profileIma
     };
     localStorage.setItem("resumeData", JSON.stringify(formData));
     console.log("Form data saved to localStorage:", formData);
-    window.location.href = "./my-resume.html";
+    window.location.href = "mine-resume.html";
 });
